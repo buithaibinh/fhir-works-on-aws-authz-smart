@@ -118,7 +118,9 @@ export function isScopeSufficient(
     bulkDataAuth?: BulkDataAuth,
 ): boolean {
     try {
+        console.log('isScopeSufficient', scope, reqOperation, reqResourceType, bulkDataAuth);
         const smartScope = convertScopeToSmartScope(scope);
+        console.log('isScopeSufficient', smartScope);
         if (bulkDataAuth) {
             return isSmartScopeSufficientForBulkDataAccess(
                 bulkDataAuth,
