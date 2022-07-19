@@ -9,7 +9,7 @@
 
 Info_Output.yml
 dist
-lib
+# lib
 .build
 .idea
 yarn-error.log
